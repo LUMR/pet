@@ -12,11 +12,12 @@ public class BaseDAO {
 
     public void getConn() {
         try {
-            Class.forName("jdbc.java.Mysql.Driver");
+            Class.forName("com.mysql.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        String url = "jdbc:mysql://localhost:3306/pet";
+//        String url = "jdbc:mysql://localhost:3306/pet";
+        String url = "jdbc:mysql://192.168.1.107:3306/pet?characterEncoding=utf8&useSSL=true";
         String user = "webuser";
         String password = "wwwlumr";
         try {

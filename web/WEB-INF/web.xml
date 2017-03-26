@@ -3,4 +3,30 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+    <!--获取选择框信息-->
+    <servlet>
+        <servlet-name>SelectBreedServlet</servlet-name>
+        <servlet-class>com.java.lumr.pet.servlet.SelectBreedServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SelectBreedServlet</servlet-name>
+        <url-pattern>/selectBreed</url-pattern>
+    </servlet-mapping>
+    <!--获取宠物信息-->
+    <servlet>
+        <servlet-name>getPetServlet</servlet-name>
+        <servlet-class>com.java.lumr.pet.servlet.GetPetServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddPetServlet</servlet-name>
+        <servlet-class>com.java.lumr.pet.servlet.AddPetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddPetServlet</servlet-name>
+        <url-pattern>/addPet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>getPetServlet</servlet-name>
+        <url-pattern>/getPet</url-pattern>
+    </servlet-mapping>
 </web-app>

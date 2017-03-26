@@ -1,0 +1,5 @@
+#content {
+    width:300px;
+    margin:0 auto;}
+table {border: solid cyan 1px;}
+table td,th {width: 100px;text-align: center;}
